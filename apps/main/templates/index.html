@@ -38,22 +38,31 @@
                 </a>
             </div>
 
-            <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-muted hover:text-light focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+            <!-- Mobile Actions -->
+            <div class="md:hidden flex items-center gap-3">
+                <button id="theme-toggle-mobile" class="p-2 rounded-xl bg-dark/50 hover:bg-dark/50 text-muted hover:text-light transition-all" title="تغییر تم">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </button>
+                <button id="menu-btn" class="text-muted hover:text-light focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 right-0 bg-dark/95 backdrop-blur-xl border-b border-dark px-6 py-4 flex items-center justify-center gap-4 shadow-lg">
-            <a href="#" class="px-6 py-2.5 rounded-xl font-medium text-sm text-muted hover:text-light hover:bg-dark/50 transition-all">
-                Login
-            </a>
-            <a href="#" class="px-6 py-2.5 rounded-xl font-medium text-sm bg-primary hover:bg-primary text-light shadow-lg shadow-primary transition-all">
-                Sign Up
-            </a>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 right-0 bg-dark/95 backdrop-blur-xl border-b border-dark shadow-lg overflow-hidden">
+            <div class="px-6 py-5 flex flex-col gap-3">
+                <a href="#" class="w-full text-center px-4 py-3 rounded-xl font-medium text-sm border border-dark text-muted hover:text-light hover:bg-dark/50 transition-all">
+                    Login
+                </a>
+                <a href="#" class="w-full text-center px-4 py-3 rounded-xl font-medium text-sm bg-primary text-light shadow-lg shadow-primary transition-all">
+                    Sign Up
+                </a>
+            </div>
         </div>
     </header>
 
