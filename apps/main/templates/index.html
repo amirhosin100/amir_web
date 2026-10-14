@@ -1,19 +1,8 @@
+{% extends "base/base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amirhossein Mirjamali — Backend Developer</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fira+Code:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
- </head>
 
+{% block content %}
 <body class="bg-dark text-light font-sans antialiased selection:bg-primary selection:text-light overflow-x-hidden">
     <script>
         document.documentElement.style.fontFamily = "'Plus Jakarta Sans', sans-serif";
@@ -355,9 +344,13 @@
         <p>© 2026 Amirhossein Mirjamali. Crafted with passion & code.</p>
     </footer>
 
-    <!-- Data source -->
-    <script src="{% static 'js/data.js' %}"></script>
-    <!-- Custom JavaScript -->
-    <script src="{% static 'js/index.js' %}"></script>
 </body>
-</html>
+{% endblock content %}
+
+{% block scripts %}
+<!-- Data source -->
+<script src="{% static 'js/data.js' %}"></script>
+<!-- Custom JavaScript -->
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock scripts %}
+
