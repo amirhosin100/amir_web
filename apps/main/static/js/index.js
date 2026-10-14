@@ -7,21 +7,11 @@ function populateFromData() {
   // Hero badge
   document.querySelector('[data-badge]').textContent = PROFILE.badge;
 
-  // Hero heading
-  document.querySelector('#hero h1 span').textContent = PROFILE.firstName;
+  //document.querySelector('.hero span span').textContent = PROFILE.firstName;
 
   // Hero description
   const descEl = document.querySelector('#hero p.text-base');
-  descEl.innerHTML = PROFILE.description.replace(
-    PROFILE.name,
-    `<span class="text-accent-light font-semibold">${PROFILE.name}</span>`
-  ).replace(
-    PROFILE.mainFramework,
-    `<span class="text-accent-light font-semibold">${PROFILE.mainFramework}</span>`
-  ).replace(
-    'REST API',
-    `<span class="text-accent-light font-semibold">REST API</span>`
-  );
+  descEl.innerHTML = PROFILE.description;
 
   // Quick Highlights
   const highlights = document.querySelectorAll('#hero .grid-cols-3 > div');

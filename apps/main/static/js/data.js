@@ -38,7 +38,7 @@ const PROFILE = {
 
   get copyright() { return `© 2026 ${this._name}. Crafted with passion & code.`; },
   get description() {
-    return `I am ${this._name}, a backend developer. I work with ${this._framework} and focus primarily on designing and building robust REST API services.`;
+    return `I am <h1 class="text-accent-light font-semibold inline">${this._name}</h1>, a backend developer. I work with ${this._framework} and focus primarily on designing and building robust REST API services.`;
   },
   get profileJson() {
     return {
